@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MyClientActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".MyService" />
     </application>
 
 </manifest>
