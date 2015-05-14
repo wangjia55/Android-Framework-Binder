@@ -1,4 +1,4 @@
-package com.jacob.android.binder;
+package com.jacob.android.binder.one;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -9,6 +9,8 @@ import android.os.IBinder;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 
+import com.jacob.android.binder.R;
+
 /**
  * Created by jacob-wj on 2015/5/14.
  */
@@ -18,6 +20,7 @@ public class MyClientActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_one);
         mServiceCon  = new ServiceConnection() {
             @Override
             public void onServiceConnected(ComponentName name, IBinder service) {

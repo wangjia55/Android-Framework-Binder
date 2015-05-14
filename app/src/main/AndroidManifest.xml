@@ -17,10 +17,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MyClientActivity"
+        <activity android:name=".one.MyClientActivity"
             android:screenOrientation="portrait"/>
 
-        <service android:name=".MyService" />
+        <service android:name=".one.MyService" />
+
+        <activity android:name=".two.RemoteActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".two.RemoteService"/>
     </application>
 
 </manifest>

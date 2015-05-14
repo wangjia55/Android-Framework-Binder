@@ -2,11 +2,11 @@ package com.jacob.android.binder;
 
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+
+import com.jacob.android.binder.one.MyClientActivity;
+import com.jacob.android.binder.two.RemoteActivity;
 
 
 public class MainActivity extends FragmentActivity {
@@ -20,6 +20,11 @@ public class MainActivity extends FragmentActivity {
 
     public void simpleDemo(View view){
         Intent intent =new Intent(this,MyClientActivity.class);
+        startActivity(intent);
+    }
+
+    public void download(View view){
+        Intent intent =new Intent(this,RemoteActivity.class);
         startActivity(intent);
     }
 
